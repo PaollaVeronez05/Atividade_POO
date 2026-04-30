@@ -204,4 +204,5 @@ Aplicando conceitos essenciais para construção de sistemas organizados, reutil
 <p align="center">
 <b>SENAI "A. Jacob Lafer" - Santo André, 2026</b><br>
 Curso Técnico em Desenvolvimento de Sistemas
+  Paolla Paula Veronez
 </p>
