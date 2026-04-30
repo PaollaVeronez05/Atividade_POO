@@ -1,104 +1,207 @@
-# Sistema Escolar Orientado a Objetos em JavaScript
+# Sistema Escolar Orientado a Objetos
 
 ![STATUS](https://img.shields.io/badge/STATUS-CONCLUÍDO-00C853?style=for-the-badge)
 ![DATA](https://img.shields.io/badge/ATUALIZADO-ABRIL%202026-9E9E9E?style=for-the-badge)
-![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge\&logo=php\&logoColor=white)
 ![POO](https://img.shields.io/badge/PROGRAMAÇÃO%20ORIENTADA%20A%20OBJETOS-3949AB?style=for-the-badge)
-![NODE.JS](https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
 ---
 
 ## Índice
 
-[![Sobre](https://img.shields.io/badge/Sobre%20o%20Projeto-2E7D32?style=for-the-badge)](#sobre-o-projeto)
-[![Tecnologias](https://img.shields.io/badge/Tecnologias%20Utilizadas-2E7D32?style=for-the-badge)](#tecnologias-utilizadas)
-[![Estrutura](https://img.shields.io/badge/Estrutura%20do%20Sistema-2E7D32?style=for-the-badge)](#estrutura-do-sistema)
-[![Funcionalidades](https://img.shields.io/badge/Funcionalidades-2E7D32?style=for-the-badge)](#funcionalidades)
-[![Conceitos](https://img.shields.io/badge/Conceitos%20Aplicados-2E7D32?style=for-the-badge)](#conceitos-aplicados)
-[![Execução](https://img.shields.io/badge/Execução-2E7D32?style=for-the-badge)](#execução-do-projeto)
-[![Aprendizados](https://img.shields.io/badge/Aprendizados-2E7D32?style=for-the-badge)](#aprendizados)
+* [Sobre o Projeto](#sobre-o-projeto)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Estrutura do Sistema](#estrutura-do-sistema)
+* [Funcionalidades](#funcionalidades)
+* [Conceitos Aplicados](#conceitos-aplicados)
+* [Execução do Projeto](#execução-do-projeto)
+* [Aprendizados](#aprendizados)
 
 ---
 
 ## Sobre o Projeto
 
-Este projeto consiste em uma simulação de **estrutura hierárquica escolar**, desenvolvida com foco na aplicação prática dos fundamentos da **Programação Orientada a Objetos (POO)** em JavaScript.
+Este projeto consiste em uma simulação de estrutura hierárquica escolar desenvolvida com foco na aplicação prática dos fundamentos da **Programação Orientada a Objetos (POO)** utilizando **JavaScript e PHP**.
 
-A aplicação representa diferentes perfis presentes no ambiente educacional — como alunos, professores, diretores e funcionários — utilizando **herança, encapsulamento, classes, métodos e atributos privados**.
+A aplicação representa diferentes perfis presentes em um ambiente educacional, como:
 
-O principal objetivo da atividade foi consolidar conhecimentos sobre modelagem orientada a objetos, organização lógica do código e reutilização de estruturas através da extensão de classes.
+* Alunos
+* Professores
+* Diretores
+* Funcionários
+
+O sistema foi construído para exercitar conceitos fundamentais da programação orientada a objetos, como herança, encapsulamento, abstração e polimorfismo.
 
 ---
 
 ## Tecnologias Utilizadas
 
-### Desenvolvimento
+### Desenvolvimento Principal
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,github,vscode" />
+    <img src="https://skillicons.dev/icons?i=js,php,nodejs,vscode,github" />
   </a>
 </p>
 
-### Recursos Aplicados
+### Ferramentas Aplicadas
 
-- **JavaScript ES6+**
-- **Node.js**
-- **Classes e Herança**
-- **Atributos Privados**
-- **Arrow Functions**
-- **Console Output**
+* **JavaScript ES6+**
+* **PHP**
+* **Node.js**
+* **Visual Studio Code**
+* **GitHub**
 
 ---
 
 ## Estrutura do Sistema
 
-O sistema foi desenvolvido a partir de uma classe principal chamada:
+O sistema foi desenvolvido a partir de uma classe principal:
 
 ### Classe Base
 
 ### `pessoas`
 
-Responsável por armazenar informações gerais compartilhadas por todos os perfis:
+Responsável por armazenar atributos compartilhados entre todos os perfis:
 
-- Nome
-- Função
-- Salário (encapsulado)
+* Nome
+* Função
+* Salário
 
 ---
 
 ### Classes Derivadas
 
-O projeto utiliza herança para especializar comportamentos:
+| Classe        | Função                           |
+| ------------- | -------------------------------- |
+| `aluno`       | Representa estudantes            |
+| `professor`   | Representa docentes              |
+| `diretor`     | Representa gestão administrativa |
+| `funcionario` | Representa colaboradores         |
 
-| Classe | Representação |
-|-------|--------------|
-| `aluno` | Estudante da instituição |
-| `professor` | Docente responsável pelo ensino |
-| `diretor` | Gestão administrativa |
-| `funcionario` | Colaborador institucional |
-
-Cada classe possui seu próprio método `falar()`, exibindo mensagens personalizadas.
+Cada classe possui seu próprio método `falar()`, gerando mensagens específicas.
 
 ---
 
 ## Funcionalidades
 
-### Cadastro de Perfis
+### Cadastro de Pessoas
 
-Criação de diferentes objetos representando pessoas da instituição.
+Criação de instâncias representando membros da instituição.
+
+### Encapsulamento
+
+Proteção de atributos sensíveis como salário.
+
+### Herança
+
+Reutilização da estrutura da classe principal.
+
+### Polimorfismo
+
+Cada perfil possui comportamento personalizado.
+
+### Saída Dinâmica
+
+Exibição automática no console.
 
 ---
 
-### Encapsulamento de Dados
+## Exemplo de Saída
 
-O atributo salário foi implementado como **privado**, reforçando o conceito de proteção de informações sensíveis.
+```bash
+Olá meu nome é Paloma e sou um Aluno mas não tenho salário
+Olá meu nome é Raul e sou um Professor
+Olá meu nome é Marcos Alves e sou um Diretor
+Olá meu nome é Elisa e sou um Funcionário
+```
 
 ---
 
-### Polimorfismo de Métodos
+## Conceitos Aplicados
 
-Cada classe redefine o método:
+### Encapsulamento
 
-```javascript
-falar()
+Proteção de dados internos.
+
+### Herança
+
+Extensão da classe base.
+
+### Polimorfismo
+
+Sobrescrita de métodos.
+
+### Abstração
+
+Representação simplificada de elementos reais.
+
+---
+
+## Execução do Projeto
+
+### Clonar Repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+### Acessar Pasta
+
+```bash
+cd sistema-escolar
+```
+
+### Executar JavaScript
+
+```bash
+node atividade.js
+```
+
+### Executar PHP
+
+```bash
+php atividade.php
+```
+
+---
+
+## Organização do Projeto
+
+```bash
+📂 sistema-escolar
+ ┣ 📄 atividade.js
+ ┣ 📄 atividade.php
+ ┗ 📄 README.md
+```
+
+---
+
+## Aprendizados
+
+Durante o desenvolvimento foram reforçados conhecimentos sobre:
+
+* Programação Orientada a Objetos
+* Estruturação de Classes
+* Métodos e Construtores
+* Encapsulamento
+* Herança
+* Organização lógica de sistemas
+
+---
+
+## Objetivo Acadêmico
+
+Atividade desenvolvida com finalidade educacional para prática de:
+
+**Programação Orientada a Objetos com JavaScript e PHP**
+
+Aplicando conceitos essenciais para construção de sistemas organizados, reutilizáveis e escaláveis.
+
+---
+
+<p align="center">
+<b>SENAI "A. Jacob Lafer" - Santo André, 2026</b><br>
+Curso Técnico em Desenvolvimento de Sistemas
+</p>
